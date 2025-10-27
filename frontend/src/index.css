@@ -848,6 +848,58 @@ textarea:-webkit-autofill:focus {
     font-size: 15px;
   }
 
+  .election-preview {
+    margin: 25px 0;
+  }
+
+  .election-header {
+    padding: 20px 20px;
+  }
+
+  .election-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+
+  .election-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .election-title {
+    font-size: 18px;
+  }
+
+  .election-content {
+    padding: 25px 20px;
+  }
+
+  .election-description {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .election-features {
+    gap: 10px;
+  }
+
+  .election-feature {
+    padding: 12px 15px;
+  }
+
+  .election-feature span {
+    font-size: 14px;
+  }
+
+  .demo-text {
+    font-size: 14px;
+  }
+
+  .btn-demo {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+
   .btn-row {
     flex-direction: column;
   }
