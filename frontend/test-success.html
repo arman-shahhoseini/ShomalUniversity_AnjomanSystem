@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page Preview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f0fdf4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 650px;
+            width: 100%;
+        }
+        
+        .header {
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            width: 70px;
+            height: 70px;
+        }
+        
+        .header-text {
+            text-align: right;
+        }
+        
+        .system-name {
+            font-size: 22px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1e40af 0%, #0891b2 50%, #059669 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+        
+        .header-subtitle {
+            font-size: 13px;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        .content {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 45px 35px;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.08), 0 8px 40px rgba(16, 185, 129, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+        
+        .icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 110px;
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, #d1fae5 0%, #fef3c7 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15), 0 8px 40px rgba(16, 185, 129, 0.1);
+            border: 3px solid white;
+        }
+        
+        .title {
+            font-size: 30px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+        
+        .success-msg {
+            font-size: 22px;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, rgba(240, 253, 250, 0.8) 0%, rgba(204, 251, 241, 0.8) 100%);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 18px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 20px rgba(16, 185, 129, 0.08);
+        }
+        
+        .success-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #d1fae5 0%, #fef3c7 100%);
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(16, 185, 129, 0.2);
+            border: 2px solid white;
+        }
+        
+        .info-card h3 {
+            font-size: 19px;
+            color: #065f46;
+            margin: 15px 0 10px;
+            font-weight: 700;
+        }
+        
+        .info-card p {
+            color: #047857;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        /* Election System Preview */
+        .election-preview {
+            margin: 35px 0;
+            background: linear-gradient(135deg, rgba(249, 250, 251, 0.95) 0%, rgba(243, 244, 246, 0.95) 100%);
+            border: 2px solid rgba(209, 213, 219, 0.4);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+        
+        .election-header {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .election-icon-wrapper {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+        }
+        
+        .election-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: white;
+            margin: 0;
+        }
+        
+        .election-content {
+            padding: 30px;
+            text-align: right;
+        }
+        
+        .election-description {
+            font-size: 16px;
+            line-height: 2;
+            color: #374151;
+            margin: 0 0 25px 0;
+            font-weight: 500;
+            text-align: justify;
+        }
+        
+        .election-description strong {
+            color: #1e40af;
+            font-weight: 700;
+        }
+        
+        .election-features {
+            display: grid;
+            gap: 12px;
+            margin: 25px 0;
+        }
+        
+        .election-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, rgba(239, 246, 255, 0.6) 0%, rgba(219, 234, 254, 0.6) 100%);
+            padding: 14px 18px;
+            border-radius: 12px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        .election-feature-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 26px;
+            height: 26px;
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            color: white;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .election-feature span {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1e40af;
+        }
+        
+        .demo-link-wrapper {
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 2px dashed rgba(209, 213, 219, 0.5);
+            text-align: center;
+        }
+        
+        .demo-text {
+            font-size: 15px;
+            color: #6b7280;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+        
+        .btn-demo {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 700;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%);
+            color: #1e40af;
+            border: 2px solid rgba(59, 130, 246, 0.3);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-demo:hover {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-2px);
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 50%, #10b981 100%);
+            color: white;
+            border: none;
+            border-radius: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            margin-top: 10px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="/logo.png" alt="لوگو دانشگاه شمال" class="logo">
+            <div class="header-text">
+                <h1 class="system-name">سامانه انجمن دانشگاه شمال آمل</h1>
+                <p class="header-subtitle">پل ارتباطی علم و دانش</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="icon-wrapper">
+                <span style="font-size: 55px;">🎉</span>
+            </div>
+            <h2 class="title">تبریک!</h2>
+            <p class="success-msg">ثبت‌نام شما با موفقیت انجام شد</p>
+            
+            <div class="info-card">
+                <div class="success-icon-wrapper">
+                    <span style="font-size: 32px;">🎁</span>
+                </div>
+                <h3>شما در قرعه‌کشی هدایای انجمن شرکت دارید!</h3>
+                <p>به زودی با شما تماس خواهیم گرفت</p>
+            </div>
+
+            <!-- Election System Preview -->
+            <div class="election-preview">
+                <div class="election-header">
+                    <div class="election-icon-wrapper">
+                        <span style="font-size: 32px; color: white;">🎯</span>
+                    </div>
+                    <h3 class="election-title">سامانه انتخابات انجمن علمی</h3>
+                </div>
+                
+                <div class="election-content">
+                    <p class="election-description">
+                        به زودی، پس از جمع‌آوری و بررسی لیست نامزدهای اعضای هیئت مدیره انجمن، 
+                        <strong>سامانه انتخابات الکترونیکی</strong> راه‌اندازی خواهد شد. 
+                        در این سامانه می‌توانید به صورت دموکراتیک و شفاف، به نامزدهای مورد نظر خود رأی دهید 
+                        و در تعیین آینده انجمن علمی نقش مستقیم داشته باشید.
+                    </p>
+                    
+                    <div class="election-features">
+                        <div class="election-feature">
+                            <div class="election-feature-icon">✓</div>
+                            <span>رأی‌گیری امن و محرمانه</span>
+                        </div>
+                        <div class="election-feature">
+                            <div class="election-feature-icon">✓</div>
+                            <span>شفافیت کامل در نتایج</span>
+                        </div>
+                        <div class="election-feature">
+                            <div class="election-feature-icon">✓</div>
+                            <span>دسترسی آسان و سریع</span>
+                        </div>
+                    </div>
+
+                    <div class="demo-link-wrapper">
+                        <p class="demo-text">برای آشنایی با نحوه کار سامانه، می‌توانید نسخه آزمایشی را مشاهده کنید:</p>
+                        <a 
+                            href="https://anjomanshomal.netlify.app/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="btn-demo"
+                        >
+                            مشاهده نسخه دمو سامانه ←
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://anjomanshomal.netlify.app/" class="btn-primary">
+                🏠 بازگشت به صفحه اصلی
+            </a>
+        </div>
+    </div>
+</body>
+</html>
