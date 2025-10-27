@@ -596,7 +596,7 @@ input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0 1000px #f8fafc inset !important;
+  -webkit-box-shadow: 0 0 0 1000px rgba(248, 250, 252, 0.6) inset !important;
   -webkit-text-fill-color: #1e293b !important;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -607,17 +607,56 @@ textarea:-webkit-autofill:focus {
     padding: 15px;
   }
 
+  .logo-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 25px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .system-name {
+    font-size: 19px;
+  }
+
+  .header-subtitle {
+    font-size: 12px;
+  }
+
   .content {
-    padding: 30px 20px;
-    border-radius: 16px;
+    padding: 35px 25px;
+    border-radius: 20px;
+  }
+
+  .icon-wrapper {
+    width: 85px;
+    height: 85px;
   }
 
   .icon {
-    font-size: 60px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .icon-wrapper.success {
+    width: 95px;
+    height: 95px;
+  }
+
+  .icon-wrapper.success .icon {
+    width: 48px;
+    height: 48px;
   }
 
   .title {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .subtitle {
@@ -630,7 +669,7 @@ textarea:-webkit-autofill:focus {
   }
 
   .feature {
-    padding: 16px 12px;
+    padding: 18px 15px;
     font-size: 15px;
   }
 
@@ -648,7 +687,13 @@ textarea:-webkit-autofill:focus {
 /* Accessibility */
 button:focus-visible,
 input:focus-visible,
-textarea:focus-visible {
+textarea:focus-visible,
+a:focus-visible {
   outline: 3px solid #3b82f6;
   outline-offset: 2px;
+}
+
+/* Loading state animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
 }
