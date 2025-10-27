@@ -123,7 +123,7 @@ function App() {
               <div className="icon-wrapper">
                 <Rocket className="icon" strokeWidth={1.5} />
               </div>
-              <h2 className="title">انجمن علمی یعنی چه؟</h2>
+              <h2 className="title">انجمن علمی یعنی چی؟</h2>
               <div className="info-card">
                 <p>انجمن علمی دانشگاه شمال، محیطی است برای رشد علمی، فردی و اجتماعی دانشجویان. اینجا می‌توانید در پروژه‌های گروهی شرکت کنید، مهارت‌های جدید یاد بگیرید و با دانشجویان هم‌فکر ارتباط برقرار کنید.</p>
               </div>
@@ -145,7 +145,7 @@ function App() {
               <div className="icon-wrapper">
                 <Users className="icon" strokeWidth={1.5} />
               </div>
-              <h2 className="title">بیایید آشنا شویم</h2>
+              <h2 className="title">بیایید باهم آشنا بشیم </h2>
               <p className="subtitle">نام و نام خانوادگی خود را وارد کنید</p>
               <div className="form">
                 <div className="form-field">
@@ -232,7 +232,7 @@ function App() {
                 <Target className="icon" strokeWidth={1.5} />
               </div>
               <h2 className="title">رشته تحصیلی</h2>
-              <p className="subtitle">در چه رشته‌ای مشغول تحصیل هستید؟</p>
+              <p className="subtitle">در چه رشته‌ای مشغول تحصیل هستی؟
               <div className="form">
                 <div className="form-field">
                   <label>رشته تحصیلی</label>
