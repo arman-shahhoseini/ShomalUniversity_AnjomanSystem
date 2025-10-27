@@ -307,6 +307,7 @@ function App() {
               </div>
               <h2 className="title">تبریک!</h2>
               <p className="success-msg">ثبت‌نام شما با موفقیت انجام شد</p>
+              
               <div className="info-card success">
                 <div className="success-icon-wrapper">
                   <Gift className="success-icon" strokeWidth={2} />
@@ -314,7 +315,55 @@ function App() {
                 <h3>شما در قرعه‌کشی هدایای انجمن شرکت دارید!</h3>
                 <p>به زودی با شما تماس خواهیم گرفت</p>
               </div>
-              <a href="https://anjomanshomal.netlify.app/" className="btn-primary">
+
+              {/* Election System Preview */}
+              <div className="election-preview">
+                <div className="election-header">
+                  <div className="election-icon-wrapper">
+                    <Target className="election-icon" strokeWidth={2} />
+                  </div>
+                  <h3 className="election-title">سامانه انتخابات انجمن علمی</h3>
+                </div>
+                
+                <div className="election-content">
+                  <p className="election-description">
+                    به زودی، پس از جمع‌آوری و بررسی لیست نامزدهای اعضای هیئت مدیره انجمن، 
+                    <strong> سامانه انتخابات الکترونیکی</strong> راه‌اندازی خواهد شد. 
+                    در این سامانه می‌توانید به صورت دموکراتیک و شفاف، به نامزدهای مورد نظر خود رأی دهید 
+                    و در تعیین آینده انجمن علمی نقش مستقیم داشته باشید.
+                  </p>
+                  
+                  <div className="election-features">
+                    <div className="election-feature">
+                      <div className="election-feature-icon">✓</div>
+                      <span>رأی‌گیری امن و محرمانه</span>
+                    </div>
+                    <div className="election-feature">
+                      <div className="election-feature-icon">✓</div>
+                      <span>شفافیت کامل در نتایج</span>
+                    </div>
+                    <div className="election-feature">
+                      <div className="election-feature-icon">✓</div>
+                      <span>دسترسی آسان و سریع</span>
+                    </div>
+                  </div>
+
+                  <div className="demo-link-wrapper">
+                    <p className="demo-text">برای آشنایی با نحوه کار سامانه، می‌توانید نسخه آزمایشی را مشاهده کنید:</p>
+                    <a 
+                      href="https://anjomanshomal.netlify.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="btn-demo"
+                    >
+                      مشاهده نسخه دمو سامانه
+                      <ChevronLeft className="btn-icon" size={18} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <a href="https://anjomanshomal.netlify.app/" className="btn-primary btn-home">
                 <Home className="btn-icon" size={20} />
                 بازگشت به صفحه اصلی
               </a>
