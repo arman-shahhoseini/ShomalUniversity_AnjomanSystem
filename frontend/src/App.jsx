@@ -307,14 +307,6 @@ function App() {
               </div>
               <h2 className="title">تبریک!</h2>
               <p className="success-msg">ثبت‌نام شما با موفقیت انجام شد</p>
-              
-              <div className="info-card success">
-                <div className="success-icon-wrapper">
-                  <Gift className="success-icon" strokeWidth={2} />
-                </div>
-                <h3>شما در قرعه‌کشی هدایای انجمن شرکت دارید!</h3>
-                <p>به زودی با شما تماس خواهیم گرفت</p>
-              </div>
 
               {/* Election System Preview */}
               <div className="election-preview">
@@ -362,11 +354,6 @@ function App() {
                   </div>
                 </div>
               </div>
-
-              <a href="https://anjomanshomal.netlify.app/" className="btn-primary btn-home">
-                <Home className="btn-icon" size={20} />
-                بازگشت به صفحه اصلی
-              </a>
             </div>
           )}
         </div>
