@@ -1,0 +1,15 @@
+# Netlify Configuration for Landing Page
+[build]
+  base = "landing-page/frontend/"
+  command = "npm run build"
+  publish = "dist/"
+
+# Environment variables
+[build.environment]
+  VITE_API_BASE_URL = "https://shomal-anjomanuni.onrender.com/api/landing"
+
+# Redirects for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
