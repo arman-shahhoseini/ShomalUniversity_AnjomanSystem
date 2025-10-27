@@ -232,7 +232,7 @@ function App() {
                 <Target className="icon" strokeWidth={1.5} />
               </div>
               <h2 className="title">رشته تحصیلی</h2>
-              <p className="subtitle">در چه رشته‌ای مشغول تحصیل هستی؟
+              <p className="subtitle">در چه رشته‌ای مشغول تحصیل هستی؟</p>
               <div className="form">
                 <div className="form-field">
                   <label>رشته تحصیلی</label>
